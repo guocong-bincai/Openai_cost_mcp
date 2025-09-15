@@ -17,9 +17,13 @@
     "mcp",
     "analysis",
     "gpt",
-    "usage"
+    "usage",
+    "secure",
+    "privacy",
+    "cursor",
+    "billing"
   ],
-  "author": "OpenAI Cost MCP Team",
+  "author": "guocong-bincai",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.0"
@@ -29,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/openai-cost-mcp/openai-cost-mcp.git"
+    "url": "git+https://github.com/guocong-bincai/Openai_cost_mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/openai-cost-mcp/openai-cost-mcp/issues"
+    "url": "https://github.com/guocong-bincai/Openai_cost_mcp/issues"
   },
-  "homepage": "https://github.com/openai-cost-mcp/openai-cost-mcp#readme"
+  "homepage": "https://github.com/guocong-bincai/Openai_cost_mcp#readme"
 }

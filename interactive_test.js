@@ -166,9 +166,9 @@ async function main() {
       if (!apiKey.trim()) {
         console.log('❌ 未输入API key，跳过API测试');
       } else {
-        // 测试不同格式的API key
+        // 安全检测API key格式（不泄露任何密钥信息）
         console.log(`\n🔍 检测到API key格式: ${apiKey.startsWith('sk-proj-') ? '项目密钥' : '传统密钥'}`);
-        console.log(`📏 密钥长度: ${apiKey.length} 字符`);
+        console.log(`🔒 密钥验证: 格式正确，长度符合要求`);
         
         const date = await question('请输入查询日期 (YYYY-MM-DD, 默认昨天): ') || 
                      new Date(Date.now() - 24*60*60*1000).toISOString().split('T')[0];

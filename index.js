@@ -39,6 +39,8 @@ const MODEL_COSTS = {
 
 class OpenAICostCalculator {
   constructor(apiKey) {
+    // 🔒 安全说明: API key仅在内存中临时存储，不会被记录、保存或传输到任何第三方
+    // 🔐 隐私保护: 所有API调用直接发送到OpenAI官方服务器，本服务器不记录任何敏感信息
     this.apiKey = apiKey;
     this.headers = {
       'Authorization': `Bearer ${apiKey}`,
@@ -324,7 +326,8 @@ class MCPServer {
       }
 
       result += '\n✅ 数据来源: OpenAI Official Usage API';
-      result += '\n🔒 安全提示: API密钥仅用于查询，不会被存储';
+      result += '\n🔒 安全提示: API密钥仅用于查询，不会被存储、记录或传输到任何第三方服务器';
+      result += '\n🛡️ 隐私保护: 所有数据处理均在本地内存中完成，通信直接连接OpenAI官方API';
 
       return {
         content: [{
