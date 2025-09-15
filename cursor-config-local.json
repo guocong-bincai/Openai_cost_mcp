@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "openai-cost-mcp": {
+      "command": "node",
+      "args": ["/Users/xiaogaiguo/GolandProjects/openAi/api-usage/openai-cost-mcp-js/index.js"],
+      "env": {}
+    }
+  }
+}

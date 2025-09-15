@@ -1,0 +1,38 @@
+{
+  "name": "openai-cost-mcp",
+  "version": "1.0.0",
+  "description": "OpenAI API成本查询和分析的MCP服务器",
+  "main": "index.js",
+  "bin": {
+    "openai-cost-mcp": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "openai",
+    "api",
+    "cost",
+    "mcp",
+    "analysis",
+    "gpt",
+    "usage"
+  ],
+  "author": "OpenAI Cost MCP Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openai-cost-mcp/openai-cost-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/openai-cost-mcp/openai-cost-mcp/issues"
+  },
+  "homepage": "https://github.com/openai-cost-mcp/openai-cost-mcp#readme"
+}
